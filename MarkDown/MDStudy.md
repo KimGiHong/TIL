@@ -42,7 +42,7 @@
 
 ## 링크
 ### 사용법
-```[GOOGLE](https://google.com)``` -> [GOOGLE](https://google.com)
+```[GOOGLE](https://google.com)``` -> [GOOGLE](https://google.com)  
 ```[Naver](https://naver.com "링크 설명을 할수있습니다!")``` -> [Naver](https://naver.com "링크 설명을 할수있습니다!")
 
 문서 안에서 [참조 링크]를 그대로 사용할 수도 있습니다.
