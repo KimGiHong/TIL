@@ -49,7 +49,7 @@
 
 다음과 같이 문서 내 일반 URL이나 꺾쇠 괄호(`< >`, Angle Brackets)안의 URL은 자동으로 링크를 사용합니다.  
 ex)구글 홈페이지: https://google.com  
-   네이버 홈페이지: <https://naver.com>
+ex)네이버 홈페이지: <https://naver.com>
 
 ## 코드 강조
 ### 사용법
