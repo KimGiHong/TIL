@@ -24,7 +24,7 @@
 
 <br>
 
-### [JavaScript](javascript.md)
+### [JavaScript](https://github.com/KimGiHong/JS_StudyBook/blob/main/README.md)
 
 <br>
 
