@@ -96,3 +96,41 @@ if (httpRequest.status === 200) {
 * `http_request.responseXML` – 서버의 응답을 XMLDocument 객체로 반환하며 당신은 자바스크립트의 DOM 함수들을 통해 이 객체를 다룰 수 있을 것이다.
 
 위의 단계는 비동기식 요구(asynchronous request)를 사용했을 경우에 대한 설명입니다(즉, `open()`의 세번째 변수가 생략되었거나 `true` 일 경우). 동기식(Synchronous) 방법을 사용한다면 함수(`nameOfTheFunction`)를 명시할 필요 없이 `send()` 호출에 의해 반환되는 data를 바로 사용 할 수 있습니다. 그러나 이는 스크립트가 `send()`를 호출할 때 멈춰지며 서버의 응답이 완료 될 때까지 기다리기 때문에 나쁜 UX를 제공하게 합니다.
+
+## 3. 예제
+
+이제 이들을 한데 모아서 간단한 HTTP Request를 수행해보겠다. 작성할 자바스크립트는 "I'm a test." 라는 문장이 적힌 test.html 이라는 HTML 문서를 요청해서 문서의 내용을 파라미터로 alert() 함수를 호출할 것입니다. 
+
+[Test Code](test.html) 이 예제에서 :
+* 사용자는 브라우저 상의 "Make a request" 라는 버튼을 클릭합니다;
+* 버튼의 클릭 이벤트 핸들러는 `makeRequest()` 함수를 호출합니다;
+* 브라우저는 서버로 요구를 보내고 `onreadystatechange` 에 설정된 `alertContents()` 함수가 수행됩니다;
+* `alertContents()` 함수는 서버로부터 응답을 받았는지와 정상적으로 처리된 응답인지를 검사하여 정상적인 경우 `test.html` 파일의 내용을 파라미터로 `alert()` 함수를 호출합니다.
+
+> 주의할 것 : Internet Explorer에서 정적 HTML 파일이 아닌 XML 파일을 받기 위한 request를 보내려면 응답 헤더를 반드시 설정해주어야 합니다. 헤더에 Content-Type: application/xml을 설정해주지 않으면 IE는 XML 요소에 접근하고자 할 때 "Object Expected" 예외에러를 발생시킵니다.
+
+> 주의할 것2 : 헤더에 Cache-Control: no-cache 를 설정 하지 않는다면, 브라우저는 응답을 캐싱하고 다시 요청하지 않을 수 있습니다. 이는 디버깅하기 매우 어려워 질 수 있음을 기억하십시오. 또는 GET 파라미터로 timestamp(시간정보)나 난수를 추가하면 캐싱을 방지할 수 있습니다. (캐싱 우회를 참고하세요)
+
+> 주의할 것3 :  만약 httpRequest 변수가 전역적으로 사용되면, makeRequest() 함수를 호출하는 여러 함수들 사이에서 경쟁 상태(race condition)가 발생할 수 있으며, 이 경우 다른 데이터를 덮어쓰게 됩니다. XMLHttpRequest 인스턴스는 함수 내의 지역 변수로 선언하는 것을 권장합니다.
+
+통신 에러(서버가 다운되는 상황 등) 상황에서, status 필드를 접근하려 하면 `onreadystatechange`메서드에서 예외 에러를 발생 시킬 것이다.이러한 문제를 예방하기 위해 `if...then` 구문을 `try...catch`구문으로 감싸도록 하자.
+
+```javascript
+function alertContents() {
+  try {
+    if (httpRequest.readyState === XMLHttpRequest.DONE) {
+      if (httpRequest.status === 200) {
+        alert(httpRequest.responseText);
+      } else {
+        alert('There was a problem with the request.');
+      }
+    }
+  }
+  catch( e ) {
+    alert('Caught Exception: ' + e.description);
+  }
+}
+```
+
+### 사실 정리하고 있는데 이해가 잘 되지않는다. 
+### 먼저 브라우저 동작원리 및 렌더링 경로 등을 알아보고 오도록 하자.
