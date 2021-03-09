@@ -1,3 +1,4 @@
+```html
 <button id="ajaxButton" type="button">Make a request</button>
 
 <script>
@@ -33,3 +34,4 @@
 }
 })();
 </script>
+```

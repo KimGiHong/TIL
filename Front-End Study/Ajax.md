@@ -101,7 +101,7 @@ if (httpRequest.status === 200) {
 
 이제 이들을 한데 모아서 간단한 HTTP Request를 수행해보겠다. 작성할 자바스크립트는 "I'm a test." 라는 문장이 적힌 test.html 이라는 HTML 문서를 요청해서 문서의 내용을 파라미터로 alert() 함수를 호출할 것입니다. 
 
-[Test Code](test.html) 이 예제에서 :
+[Test Code](test.md) 이 예제에서 :
 * 사용자는 브라우저 상의 "Make a request" 라는 버튼을 클릭합니다;
 * 버튼의 클릭 이벤트 핸들러는 `makeRequest()` 함수를 호출합니다;
 * 브라우저는 서버로 요구를 보내고 `onreadystatechange` 에 설정된 `alertContents()` 함수가 수행됩니다;
