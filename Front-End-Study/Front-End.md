@@ -12,35 +12,5 @@
 >><span style="color:lightcoral">⊙Web 디자이너</span>는 이를 디자인으로 멋지게 뽑아내는 당담입니다.  
 >><span style="color:lightblue">⊙프론트엔드 개발자</span>는 뽑아낸 디자인을 웹어플리케이션(Web application)으로 구현하는 것입니다.
 
-<br>
-
-## 사용 기술
-
-### [HTML](html.md)
-
-<br>
-
-### [CSS](css.md)
-
-<br>
-
-### [JavaScript](https://github.com/KimGiHong/JS_StudyBook/blob/main/README.md)
-
-<br>
-
-### [AJAX](../Front-End-Study/Ajax/Ajax.md)
-
-<br>
-
-### [React](https://github.com/KimGiHong/React-study/blob/master/Study-Book/React-Study-Book.md)
-
-<br>
-
-### [SPA](../Front-End-Study/WEB/SPA.md)
-
-<br>
-
-### [SEO](../Front-End-Study/WEB/SEO.md)
-
 ## 프론트엔드 개발자 로드맵
 ![Roadmap](../Front-End-Study/img/roadmap.png "RoadMap")
