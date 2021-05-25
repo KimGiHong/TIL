@@ -17,8 +17,11 @@
 
 ## 분류
 ### MarkDown
-◦ [마크다운 언어에 대해서 알아보았다!](MarkDown/MDStudy.md)
+- [마크다운 언어에 대해서 알아보았다!](MarkDown/MDStudy.md)
 <br>
 
 ### WEB
-◦[Front-End Study](Front-End-Study/Front-End.md)
+- [Front-End Study](Front-End-Study/Front-End.md)
+
+### FE 지식
+- [WebStorage](FE-knowledge/WebStorage.md)
