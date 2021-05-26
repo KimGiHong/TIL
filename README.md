@@ -1,4 +1,5 @@
 # Today I Learned
+`2021년 1월 10일 시작`  
 오늘 새롭게 배운 혹은 삽질한 경험, 그리고 히스토리 정리 목적의 간단한 글들을 마크다운 문서로 정리 해 보자  
 
 ## 작성법
@@ -19,6 +20,7 @@
 - [CSS](Front-End-Study/WEB/css.md)
 - [JavaScript](Front-End-Study/WEB/js.md)
 - [React](Front-End-Study/WEB/Study-Book/React-Study-Book.md)
+- [TypeScript](Front-End-Study/WEB/ts.md)
 - [AJAX](../Front-End-Study/Ajax/Ajax.md)
 - [SPA](../Front-End-Study/WEB/SPA.md)
 - [SEO](../Front-End-Study/WEB/SEO.md)
