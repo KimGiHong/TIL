@@ -29,3 +29,7 @@
 - [WebStorage](FE-knowledge/WebStorage.md)
 - [cookie & session](FE-knowledge/cookie.md)
 - [브라우저 렌더링 과정](FE-knowledge/Rendering.md)
+
+### Internet
+- [Internet](Internet/Internet.md)
+- [HTTP](Internet/HTTP.md)
