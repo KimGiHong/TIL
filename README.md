@@ -20,7 +20,7 @@
 - [CSS](Front-End-Study/WEB/css.md)
 - [JavaScript](Front-End-Study/WEB/js.md)
 - [React](Front-End-Study/WEB/Study-Book/React-Study-Book.md)
-- [TypeScript](Front-End-Study/WEB/ts.md)
+- [TypeScript](Front-End-Study/WEB/TypeScript/AboutTs.md)
 - [AJAX](../Front-End-Study/Ajax/Ajax.md)
 - [SPA](../Front-End-Study/WEB/SPA.md)
 - [SEO](../Front-End-Study/WEB/SEO.md)
@@ -35,3 +35,4 @@
 - [HTTP](Internet/HTTP.md)
 - [URL](Internet/URL.md)
 - [Domain Name](Internet/DomainName.md)
+- [DNS](Internet/DNS.md)
