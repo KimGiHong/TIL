@@ -12,7 +12,7 @@ AJAX 의 주요 두가지 특징은 이와 같은 작업을 할 수 있게 해�
 
 ## 1. HTTP request 만드는 방법
 
-JavaScript 를 이용하여 서버로 보내는 [HTTP](/Internet/HTTP.md) request를 만들기 위해서는 그에 맞는 기능을 제공하는 Object의 인스턴스가 필요하다. [XMLHttpRequest](XHR.md) 가 그러한 Object의 한 예이다.
+JavaScript 를 이용하여 서버로 보내는 HTTP request를 만들기 위해서는 그에 맞는 기능을 제공하는 Object의 인스턴스가 필요하다. [XMLHttpRequest](XHR.md) 가 그러한 Object의 한 예이다.
 
 서버에 요청(Request)을 하기에 앞서, 서버로 보낸 요청에 대한 응답을 받았을 때 어떤 동작을 할 것인지 정해야합니다. 위에서 생성한 httpRequest 의 `onreadystatechange` property에 특정 함수(`nameOfTheFunction`)를 할당하면 요청에 대한 상태가 변화할 때 특정 함수(`nameOfTheFunction`)가 불리게 됩니다.
 
