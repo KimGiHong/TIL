@@ -31,3 +31,7 @@ a = ro; // 오류
 ```ts
 a = ro as number[];
 ```
+
+# `readonly` vs `const`
+
+`readonly`와 `const` 중에 어떤 것을 사용할 지 기억하기 가장 쉬운 방법은 변수와 프로퍼티중 어디에 사용할지 질문해 본느 것이다. 변수는 `const`를 사용하고 프로퍼티는 `readonly`를 사용한다.
